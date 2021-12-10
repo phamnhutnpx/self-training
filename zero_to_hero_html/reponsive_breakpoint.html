@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reponsive_Breakpoint</title>
+    <style>
+        html,
+        body {
+            background-color: #63ade5;
+            /* background-image: linear-gradient( 45deg, #9eb1d1, #96b9d9); */
+            box-sizing: border-box;
+        }
+        
+        h1 {
+            display: flex;
+            justify-content: center;
+        }
+        
+        div {
+            display: flex;
+        }
+        
+        .content3,
+        .content2,
+        .content1 {
+            display: block;
+            font-size: 100px;
+            display: none;
+            margin: auto;
+            border-radius: 50%;
+            padding: 50px;
+            box-sizing: border-box;
+        }
+        /* screen mobile width: < 740px */
+        
+        @media only screen and (max-width: 739px) {
+            .content3 {
+                width: auto;
+                display: block;
+                background-color: blue;
+            }
+        }
+        /* screen tablet width: >= 740px and width: < 1024px */
+        
+        @media only screen and (min-width: 740px) and (max-width: 1023px) {
+            .content2 {
+                display: block;
+                background-color: green;
+            }
+        }
+        /* screen PC width: >= 1024px */
+        
+        @media only screen and (min-width: 1023px) {
+            .content1 {
+                display: block;
+                background-color: red;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Reponsive_Breakpoint</h1>
+    <div>
+        <div class="content1">PC</div>
+        <div class="content2">Tablet</div>
+        <div class="content3">Mobile</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Courses management API</title>
+    <style>
+        .container {
+            padding: 0 3% 9% 3%;
+        }
+        
+        #list-courses {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        #list-courses li {
+            top: 0;
+            height: 200px;
+            width: 70%;
+            min-width: 400px;
+            border-radius: 12px;
+            list-style: none;
+            padding: 20px;
+            box-shadow: 0 0 5px 5px rgba(34, 92, 251, 0.3);
+            background-image: url('https://media.istockphoto.com/vectors/modern-gradient-background-landscape-size-vector-id1022999684?k=20&m=1022999684&s=170667a&w=0&h=6cpnijTLI-W5SZxvybfHQUvWqXLExI8A50Knvk5BhQc=');
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: #fff;
+        }
+        
+        #list-courses li:hover {
+            box-shadow: 0 0 5px 5px rgba(96, 99, 255, 0.6);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Quản lí khóa học</h1>
+    <ul id="list-courses" class="">
+
+    </ul>
+
+    <div class="container">
+        <div class="input-group  mb-3">
+            <span class="input-group-text">Name courses:</span>
+            <input class="form-control" type=" text " name="name" id="name " required>
+        </div>
+        <div class="input-group mb-3 ">
+            <span class="input-group-text ">Description:</span>
+            <input class="form-control" type="text" name="description" id="description" required>
+        </div>
+        <div class="input-group  mb-3">
+            <button class="btn btn-primary" type="button" id="btn-create">Create</button>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>

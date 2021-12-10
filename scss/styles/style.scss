@@ -1,0 +1,14 @@
+$columns: 4;
+@for $i from 1 through $columns {
+    .columns-#{$i} {
+        width: (1000px / $i);
+        height: (100px / $i);
+        margin-bottom: 10px;
+        @if ($i%2==0) {
+            background-color: yellow;
+        }
+        @else {
+            background-color: red;
+        }
+    }
+}

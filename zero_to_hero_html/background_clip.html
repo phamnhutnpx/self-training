@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+</head>
+
+<body>
+
+    <!-- #page>div.logo+ul#navigation>li*5>a{Item $} //Cú pháp viết nhanh ul li a-->
+    <ul id="menu-main">
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Menu1</a></li>
+        <li><a href="#">Menu2</a></li>
+        <li><a href="#">Menu3</a></li>
+        <li><a href="#">Menu4</a>
+            <ul id="menu-sub">
+                <li><a href="#">Menu5</a></li>
+                <li><a href="#">Menu6</a></li>
+                <li><a href="#">Menu7</a></li>
+            </ul>
+        </li>
+    </ul>
+    <style>
+        html {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        body {
+            background-color: black;
+        }
+
+        ul {
+            grid: center;
+        }
+
+        ul li {
+            float: left;
+            list-style: none;
+            padding-right: 20px;
+            border: blanchedalmond solid 1px;
+        }
+
+        ul li a {
+            color: yellow;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+    </style>
+</body>
+
+</html>

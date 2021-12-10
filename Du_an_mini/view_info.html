@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Xem nhanh thông tin GTS</title>
+</head>
+
+<body>
+
+    <div class="main-content">
+        <marquee class="name" scrollamount="12"><span>XEM NHANH THÔNG TIN CÁ NHÂN.</span></marquee>
+        <div class="item button-lichhoc">
+            <button id="idlichhoc">
+        <a id="alichhoc" href="https://sv.ut.edu.vn/lich-theo-tuan.html?pLoaiLich=1" target="_blank">Lịch học</a>
+      </button>
+        </div>
+        <div class="item button-lichhoc">
+            <button id="idthongbao" style="margin: 40px;">
+        <a id="athongbao" href="https://sv.ut.edu.vn/sinh-vien-tin-tuc-thong-bao.html" target="_blank">Thông báo</a>
+      </button>
+        </div>
+        <div class="item button-lichhoc">
+            <button id="idxemdiem">
+        <a id="axemdiem" href="https://sv.ut.edu.vn/ket-qua-hoc-tap.html" target="_blank">Xem điểm</a>
+      </button>
+        </div>
+        <style>
+            body {
+                background-color: #000000;
+                font-family: "Rubik", sans-serif;
+            }
+            
+            .main-content .item {
+                display: grid;
+                /*Dua noi dung ra giua*/
+                grid-template-rows: 1fr min-content;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+            
+            button {
+                background: yellow;
+                color: rgb(255, 255, 255);
+                border: 3px solid rgb(255, 255, 255);
+                border-radius: 50px;
+                padding: 0.8rem 2rem;
+                font: 24px "Margarine", sans-serif;
+                cursor: pointer;
+                position: relative;
+                transition: 0.2s ease-in-out;
+                letter-spacing: 2px;
+            }
+            
+            #idlichhoc {
+                box-sizing: border-box;
+                text-shadow: 0 3px 3px #000000;
+            }
+            
+            #alichhoc {
+                text-decoration: none;
+                color: aliceblue;
+            }
+            
+            .name {
+                width: 100%;
+                text-align: center;
+                padding: 0 0 3rem;
+                font: 500 50px "Rubik", sans-serif;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                color: yellow;
+                text-shadow: 0 3px 3px #fb0000;
+            }
+            
+            .button-lichhoc button {
+                animation: lichhoc 3s infinite;
+            }
+            
+            .button-lichhoc button:hover {
+                animation: heartbeat 0.5s infinite;
+            }
+            
+            #idthongbao {
+                background: red;
+                color: rgb(255, 255, 255);
+                border: 3px solid rgb(255, 255, 255);
+                border-radius: 50px;
+                padding: 0.8rem 2rem;
+                font: 24px "Margarine", sans-serif;
+                cursor: pointer;
+                position: relative;
+                transition: 0.2s ease-in-out;
+                letter-spacing: 2px;
+            }
+            
+            #athongbao {
+                text-decoration: none;
+                color: aliceblue;
+                text-shadow: 0 3px 3px rgb(0, 0, 0);
+            }
+            
+            #idxemdiem {
+                background: violet;
+                color: rgb(255, 255, 255);
+                border: 3px solid rgb(255, 255, 255);
+                border-radius: 50px;
+                padding: 0.8rem 2rem;
+                font: 26px "Margarine", sans-serif;
+                cursor: pointer;
+                position: relative;
+                transition: 0.2s ease-in-out;
+                letter-spacing: 2px;
+            }
+            
+            #axemdiem {
+                text-decoration: none;
+                color: aliceblue;
+                text-shadow: 0 3px 3px black;
+            }
+            
+            @keyframes lichhoc {
+                5%,
+                50% {
+                    transform: scale(1.5);
+                }
+                10% {
+                    transform: scale(0.9);
+                }
+                15% {
+                    transform: scale(1.15);
+                }
+                20% {
+                    transform: scale(1.15) rotate(-5deg);
+                }
+                25% {
+                    transform: scale(1.15) rotate(5deg);
+                }
+                30% {
+                    transform: scale(1.15) rotate(-3deg);
+                }
+                35% {
+                    transform: scale(1.15) rotate(2deg);
+                }
+                40% {
+                    transform: scale(1.15) rotate(0);
+                }
+            }
+            
+            @keyframes heartbeat {
+                50% {
+                    transform: scale(1.1);
+                }
+            }
+        </style>
+    </div>
+</body>
+
+</html>

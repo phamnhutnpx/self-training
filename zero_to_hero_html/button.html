@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Made button</title>
+    <style>
+         :root {
+            --bg-color: #110b25;
+            --btn1: #653edd;
+            --btn2: #1de1cc;
+            --btn3: #31294d;
+        }
+        
+        * {
+            padding: 0px;
+            margin: 0px;
+            font-family: cursive;
+            background-color: var(--bg-color);
+        }
+        
+        .main-btn {
+            height: 20vh;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: var(--bg-color);
+        }
+        
+        .btn {
+            margin: auto;
+            top: 50%;
+            transform: translateY(-50%);
+            padding: 12px 24px;
+            border-radius: 50px;
+            cursor: pointer;
+            border-color: transparent;
+            outline: none;
+            color: #f6f6f6;
+            min-width: 130px;
+            display: inline-block;
+            transition: opacity 0.3s ease;
+        }
+        
+        .btn-s {
+            padding: 8px 18px;
+        }
+        
+        .btn-l {
+            padding: 14px 32px;
+        }
+        
+        .btn:hover {
+            opacity: .7;
+        }
+        
+        .btn+.btn {
+            margin-left: 20px;
+        }
+        
+        .btnSucces {
+            background-color: var(--btn1);
+        }
+        
+        .btnOk {
+            background-color: var(--btn2);
+        }
+        
+        .btnNo {
+            background-color: var(--btn3);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-btn">
+        <button class="btn btn-s btnSucces">Succes .....................</button>
+        <button class="btn btn-s btnOk">OK</button>
+        <button class="btn btn-s btnNo">NO!Thanks</button>
+    </div>
+    <div class="main-btn">
+        <button class="btn btnSucces">Succes .....................</button>
+        <button class="btn btnOk">OK</button>
+        <button class="btn btnNo">NO!Thanks</button>
+    </div>
+    <div class="main-btn">
+        <button class="btn btn-l btnSucces">Succes .....................</button>
+        <button class="btn btn-l btnOk">OK</button>
+        <button class="btn btn-l btnNo">NO!Thanks</button>
+    </div>
+</body>
+
+</html>

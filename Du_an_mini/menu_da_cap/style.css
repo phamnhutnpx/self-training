@@ -1,0 +1,33 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.head {
+    height: 45px;
+    width: 100%;
+    background-color: black;
+}
+
+ul li {
+    float: left;
+    list-style: none;
+    padding: 15px 15px;
+}
+
+ul li:hover {
+    float: left;
+    padding: 15px;
+    background-color: aliceblue;
+    color: rgb(0, 0, 0);
+}
+
+.text_menu {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.text_menu:hover {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}

@@ -1,0 +1,28 @@
+.columns-1 {
+  width: 1000px;
+  height: 100px;
+  margin-bottom: 10px;
+  background-color: red;
+}
+
+.columns-2 {
+  width: 500px;
+  height: 50px;
+  margin-bottom: 10px;
+  background-color: yellow;
+}
+
+.columns-3 {
+  width: 333.33333px;
+  height: 33.33333px;
+  margin-bottom: 10px;
+  background-color: red;
+}
+
+.columns-4 {
+  width: 250px;
+  height: 25px;
+  margin-bottom: 10px;
+  background-color: yellow;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,156 @@
+/* Định dạng mặc định CSS */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+/*Bài : Tạo biến trong CSS */
+
+:root {
+    --text-color: rgb(162, 0, 255);
+}
+
+
+/* Body của toàn trang web */
+
+body {
+    text-shadow: 2px 2px rgba(245, 245, 245, 0.51);
+    background-attachment: linear-gradient( white, black);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+/* Class chứa danh sách chấm tròn */
+
+#dstron {
+    float: left;
+    /* color:var(--text-color); */
+}
+
+
+/* class chứa danh sách đánh số */
+
+#dsso {
+    float: left;
+    padding: 0px 0px 0px 50px;
+    /* color: var(--text-color); */
+}
+
+.Home0 {
+    /* Sử dụng biến --text-color để đổi màu 2 home0 */
+    color: var(--text-color);
+}
+
+
+/* Id của toàn bảng 1 */
+
+#table1 {
+    padding: 0px 0px 0px 50px;
+    color: var(--text-color);
+}
+
+
+/* class body của bảng */
+
+.b1body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
+
+.b1c1 {
+    color: coral
+}
+
+.b1c2 {
+    padding: 0px 0px 0px 20px;
+    color: orange
+}
+
+.b1c3 {
+    padding: 0px 0px 0px 20px;
+    color: orchid
+}
+
+
+/* Bài 16: Đơn vị trong CSS */
+
+html {
+    font-size: 30px;
+}
+
+
+/* class rectangle */
+
+.box {
+    /* Kích thước cố định - Absolute units*/
+    /* width: 100px;
+    height: 100px;
+    background-color:rgb(255, 251, 0) */
+    /* Kích thước không cố định - Relative units*/
+    /* Các đơn vị phổ biến %, rem, em, vh, vw,... */
+    font-size: 1rem;
+    width: 50vw;
+    height: 10vh;
+    background-image: linear-gradient( white, black);
+}
+
+
+/* Bài 17: Functions trong CSS */
+
+a::after {
+    content: attr(href);
+}
+
+a::content {
+    content: attr(href);
+}
+
+
+/* Bài 18: Căng chỉnh chữ ra giữa các box */
+
+.Hopthu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    height: 40%;
+    background-color: rgb(255, 102, 0);
+    border-radius: 20px;
+}
+
+
+/* Bài 25: background-size */
+
+.bgSize {
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://thuthuatnhanh.com/wp-content/uploads/2020/09/hinh-nen-sieu-xe-lamborghini-dep-an-tuong.jpg);
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+.bgSize::after {
+    content: "";
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://thuthuatnhanh.com/wp-content/uploads/2020/09/hinh-nen-sieu-xe-lamborghini-dep-an-tuong.jpg);
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+
+/* Bài 26: tạo khung cho ảnh background-origin */
+
+.frameImg {
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://thuthuatnhanh.com/wp-content/uploads/2020/09/hinh-nen-sieu-xe-lamborghini-dep-an-tuong.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 15px dashed rgb(179, 179, 179);
+    padding: 15px;
+    background-origin: border-box;
+    box-sizing: border-box;
+}

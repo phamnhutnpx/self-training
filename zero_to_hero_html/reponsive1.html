@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reponsive</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+        
+        .head_img {
+            height: 100vh;
+            width: 100%;
+            background-image: url('../img/bg-nhut-trai.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            position: absolute;
+        }
+        
+        h1 {
+            position: absolute;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: #717171;
+        }
+        /* man hinh tablet */
+        
+        @media (max-width: 768px) {
+            .head_img {
+                height: 100vh;
+                width: 100%;
+                background-image: url('../img/bg-nhut-trai.jpg');
+                background-size: cover;
+                position: absolute;
+            }
+        }
+        /* man hinh smart-phone */
+        
+        @media (max-width: 414px) {}
+    </style>
+</head>
+
+<body>
+    <div class="head_img"></div>
+    <h1>Bài học về Reponsive</h1>
+</body>
+
+</html>

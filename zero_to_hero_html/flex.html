@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        
+        html {
+            background: linear-gradient( 90deg, #434343, #434343 1px, #111 0, #111);
+        }
+        
+        body {
+            content: "";
+            background: linear-gradient( 130deg, #ff7a18, #af002d 41.07%, #319197 76.05%);
+        }
+        
+        .head {
+            font-size: 24px;
+            color: #333;
+            height: 100px;
+            background-color: rgb(240, 172, 0);
+        }
+        
+        .main-menu {
+            height: 100px;
+            position: relative;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        
+        .menu {
+            /* Cach 1: */
+            /* margin: auto; */
+            /* Cach 2: */
+            /* line-height: 100px; */
+            /* Cach 3: su dung trong the cha*/
+            /* display: flex;
+            justify-content: space-evenly;
+            align-items: center; */
+            /* Cach 4: dung position */
+            /* position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); */
+            position: relative;
+        }
+        
+        .menu::after {
+            position: absolute;
+            content: "";
+            left: -50px;
+            height: 30px;
+            top: 50%;
+            border-left: 3px solid #221c1c95;
+            border-radius: 30px;
+            transform: translateY(-50%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="head">
+        <div class="main-menu">
+            <div class="menu1">Home</div>
+            <div class="menu">About</div>
+            <div class="menu">Hotline</div>
+        </div>
+    </div>
+</body>
+
+</html>
